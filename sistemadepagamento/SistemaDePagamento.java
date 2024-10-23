@@ -8,9 +8,8 @@ package com.mycompany.sistemadepagamento;
  *
  * @author ISABELADACOSTAMUELLE
  */
-public class SistemaDePagamento {
-
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+public interface SistemaDePagamento {
+    void processarPagamento(double valor);
+    String obterDetalhes(); 
 }
+
