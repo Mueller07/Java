@@ -8,6 +8,20 @@ package com.mycompany.sistemadepagamento;
  *
  * @author ISABELADACOSTAMUELLE
  */
-public class CartaoCredito {
+public class CartaoCredito implements SistemaDePagamento {
+    String numeroCartao = "123456";
+    int codigoSeguranca = 12345;
+  
     
+    
+   @Override
+    public void processarPagamento(double valor){
+        System.out.println("Pagamento de R$" + valor + " Processado via cartao de credito");
+            }
+           
+            @Override
+            public String obterDetalhes(){
+                return numeroCartao.substring(numeroCartao.length() - 4);
+            }
+
 }
