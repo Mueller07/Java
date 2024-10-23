@@ -8,6 +8,18 @@ package com.mycompany.sistemadepagamento;
  *
  * @author ISABELADACOSTAMUELLE
  */
-public class PayPal {
+public class PayPal implements SistemaDePagamento {
+    String email = "isabelammueller00@gmail.com";
+  
     
+    @Override
+    public void 
+            processarPagamento(double valor){
+                System.out.println("Pagamento de R$" + valor + " Processado via PayPal.");
+            }
+           
+            @Override
+            public String obterDetalhes(){
+                return"Email associado a conta PayPal: " + email;
+            }
 }
