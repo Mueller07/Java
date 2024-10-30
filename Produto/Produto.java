@@ -11,13 +11,17 @@ package Produto;
 
 public abstract class Produto {
     String nome;
+    String tipo;
     double preco;
     
-    public Produto(String nome,double preco){
+    public Produto(String nome, String tipo, double preco){
         this.nome = nome;
+        this.tipo = tipo;
         this.preco = preco;
+        
     }
-   
-    }
+    
+    abstract public void detalhesPedido();
 }
+
 
