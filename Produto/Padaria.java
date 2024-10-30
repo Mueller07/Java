@@ -11,6 +11,10 @@ package Produto;
 public class Padaria extends Produto {
     public Padaria(){
         super("Pão", "Padaria", 1.50);
-    }
     
-}
+    }
+     @Override
+    public void detalhesPedido(){
+        System.out.println("O Produto " + nome + ", custou " + preco);
+   
+    }}
