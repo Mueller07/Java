@@ -10,8 +10,9 @@ package Produto;
  */
 public class App {
     public static void main(String[] args) {
-        Produto produto = new Produto();
+        Compra produto = new Compra();
+        produto.start();
     }
 }
     
-}
+
