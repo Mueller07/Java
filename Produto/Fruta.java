@@ -9,8 +9,13 @@ package Produto;
  * @author ISABELADACOSTAMUELLE
  */
 public class Fruta extends Produto{
-    public Fruta(){
+    public Fruta() {
         super("Melancia", "Fruta", 8.00);
+    }
+    
+    @Override
+    public void detalhesPedido(){
+        System.out.println("O Produto " + nome + ", custou " + preco);
     }
 
     
