@@ -10,6 +10,10 @@ package Produto;
  */
 public class Eletronicos extends Produto {
     public Eletronicos(){
-        super("Celular", "Eletronicos", 1.000);
+        super ("Celular", "Eletronicos", 1.000);
     }    
-}
+    
+     @Override
+    public void detalhesPedido(){
+        System.out.println("O Produto " + nome + ", custou " + preco);
+}}
