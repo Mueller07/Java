@@ -13,4 +13,8 @@ public class Massas extends Produto {
         super("Miojo", "Massas", 15.00);
     }
     
-}
+     @Override
+    public void detalhesPedido(){
+        System.out.println("O Produto " + nome + ", custou " + preco);
+    
+}}
