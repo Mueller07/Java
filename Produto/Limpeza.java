@@ -10,7 +10,12 @@ package Produto;
  */
 public class Limpeza extends Produto{
     public Limpeza(){
-        super("Amaciante", "Limpeza", 19.00);
+        super ("Sabão em Pó", "Limpeza", 19.00);
     }
     
+     @Override
+    public void detalhesPedido(){
+        System.out.println("O Produto " + nome + ", custou " + preco);
+    
+}
 }
